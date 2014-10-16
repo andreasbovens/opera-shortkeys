@@ -18,8 +18,6 @@
     <div class="row">
       <div class="span8">
         <p class="settingssaved alert alert-success" style="display: none;">Options saved.</p>
-        <p class="chromesyncsuccess alert alert-success" style="display: none;">Options synced to cloud.</p>
-        <p class="chromesyncfailure alert alert-failure" style="display: none;">Sync to cloud failed.</p>
 
         <form class="well form-inline" ng-controller="OptionsCtrl">
 
@@ -114,9 +112,6 @@
             </div>
           </div>
           <div class="form-actions">
-            <div class="pull-right">
-              <input type="checkbox" ng-model="chromesync"> Sync settings to cloud with Chrome Sync </input>
-            </div><br /></br />
             <div class="pull-right">
               Export/import settings to/from clipboard:
               <button ng-click="exportSettings()" class="btn"><i class="icon-upload"></i> Export</button>
